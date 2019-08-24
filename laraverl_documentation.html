@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laravel Documentation</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
 
-    <div class="container">
+<div class="container">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <a class="navbar-brand" href="#">Laravel Documentation</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -30,38 +31,180 @@
         </div>  
     </nav>
  
-        <h1 class="mt-4">Laravel Documentaion</h1>
-        <div class="card">
-            <div class="card-header">
-            Basic Installation 
-            </div>
-            <div class="card-body">
-                <div class="col-md-12 col-lg-12 col-sm-12">
-                    <h5 class="card-title">Composer</h5>
-                    <p class="card-text">Please use the Button to download and install. <a href="https://getcomposer.org/" class="btn btn-secondary" target="_blank">Click Here</a></p>
-                    
-                </div>
-                <div class="clearfix"></div>
-                <div  class="col-md-12 col-lg-12 col-sm-12 mt-4">
-                    <h5 class="card-title">Install Laravel</h5>
-                    <div class="alert alert-secondary" role="alert">
-                        Below Command install the Laravel globally in our system.<br/>
-                        <b>Command: composer global require laravel/installer</b>
+        <div class="container" id="accordion-style-1">
+            <section>
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-green mb-4 text-center">Laravel Documentaion</h1>
                     </div>
-                  
+
+                    <div class="col-12 mx-auto">
+                        <div class="accordion" id="accordionExample">
+                             <!-- Basic Installation -->
+                            <div class="card"> 
+                                <div class="card-header" id="headingOne">
+                                    <h5 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button" 
+                                            data-toggle="collapse" data-target="#collapseOne" 
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="fa fa-plus main"></i>
+                                        <i class="fa fa-angle-double-right mr-3"></i>Basic Installation.
+                                    </button>
+                                </h5>
+                                </div>
+                                <div id="collapseOne" class="collapse show fade" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="col-md-12 col-lg-12 col-sm-12">
+                                            <h5 class="card-title">Composer</h5>
+                                            <p class="card-text">Please use the Button to download and install. <a href="https://getcomposer.org/" class="btn btn-secondary" target="_blank">Click Here</a></p>
+                                            
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div  class="col-md-12 col-lg-12 col-sm-12 mt-4">
+                                            <h5 class="card-title">Install Laravel</h5>
+                                            <div class="alert alert-secondary" role="alert">
+                                                Below Command install the Laravel globally in our system.<br/>
+                                                <b>Command: composer global require laravel/installer</b>
+                                            </div>
+                                        
+                                        </div>
+                
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Creating Laravel -->
+                            <div class="card"> 
+                                <div class="card-header" id="headingOne1">
+                                    <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed btn-block text-left" type="button" 
+                                            data-toggle="collapse" data-target="#collapseOne1" 
+                                            aria-expanded="false" aria-controls="collapseOne1">
+                                        <i class="fa fa-plus main"></i>
+                                        <i class="fa fa-angle-double-right mr-3"></i>Create Laravel Application.
+                                    </button>
+                                </h5>
+                                    </div>
+                                    <div id="collapseOne1" class="collapse fade" aria-labelledby="headingOne1" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div  class="col-md-12 col-lg-12 col-sm-12 mt-4">
+                                                <h5 class="card-title">Create Laravel Application</h5>
+                                                <div class="alert alert-secondary" role="alert">
+                                                    Below Command to create <b>Laravel Application</b>  in our system.<br/>
+                                                    <b>Command: : laravel new Application-name</b>
+                                                </div>
+                                                <ol>
+                                                    
+                                                    <li> Use Composer to install all the required files/libraies. <br/>
+                                                        <div class="alert alert-success" role="alert">
+                                                            Command: composer install
+                                                        </div>
+                                                    </li>
+                    
+                                                    <li> Use Composer to Update the required files/libraies.<br/>
+                                                        <div class="alert alert-success" role="alert">
+                                                            Command: composer update
+                                                        </div>
+                                                    </li>
+                                                    <li>Use the command in the Application folder in command prompt</li>
+                                                    <li>composer.json files has been updated.</li>
+                                                </ol>
+                
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <!-- Laravel Structure -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h5 class="mb-0">
+                                <button class="btn btn-link collapsed btn-block text-left" type="button" 
+                                    data-toggle="collapse" data-target="#collapseTwo" 
+                                    aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fa fa-plus main"></i>
+                                    <i class="fa fa-angle-double-right mr-3"></i>
+                                    Laravel Structure.
+                                </button>
+                                </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse fade" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="col-md-12 col-lg-12 col-sm-12">
+                                            <h3>MVC Folder Path</h3>
+                                            <ul>
+                                                <li>Model Path: app</li>
+                                                <li>View Path: resource -> views</li>
+                                                <li>Controller Path: app -> https -> Controller</li>
+                                                <li>Routes :  app -> Routes -> web.php </li>
+                                                <li>
+                                                    Please use the link for layout page setup(
+                                                    <a href="https://laravel.com/docs/5.8/blade" target="_blank">Layout
+                                                    </a>)
+                                                </li>
+                                                
+                                            </ul>
+                                            
+                                            
+                                        </div>
+
+                                        <div class="col-md-12 col-lg-12 col-sm-12">
+                                            <h3>Laravel Commands</h3>
+                                            <ol>
+                                                <li>Run the Laravel Application: <b>php artisan serve</b></li>
+                                                
+                                            </ol>  
+                                                
+                                        </div>
+                                        
+
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                             <!-- Laravel Structure/ -->
+
+                             
+
+                            
+                           
+                        </div>
+                        <!-- Accordion close/ -->
+                    </div>	
+
                 </div>
+            </section>
 
 
-            </div>
+
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+         <!-- accordion /-->
     </div>  
       <!-- Container /-->
-
-
-
-
-
-
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
